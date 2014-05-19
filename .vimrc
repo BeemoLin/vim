@@ -41,6 +41,8 @@ Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
 "ctrl+P搜尋文件
 Plugin 'kien/ctrlp.vim'
+"matchit % 支援HTML Tag
+Plugin 'tmhedberg/matchit'
 " 自動結尾
 Plugin 'Raimondi/delimitMate'
 " 自動補全
