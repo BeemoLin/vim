@@ -82,8 +82,15 @@ filetype plugin indent on    " required
   set softtabstop=2
   set shiftwidth=2
   set expandtab
+	set smarttab
+  set cindent
   "關閉提示音
   set vb t_vb=
+  "縮排
+  "http://stackoverflow.com/questions/10213744/vim-html-autoindent-not-working
+  filetype on
+  filetype plugin on
+  filetype indent on
 
 " NERDTree setting
 noremap <Leader>n :NERDTreeToggle<cr>
