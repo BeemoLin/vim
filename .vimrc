@@ -94,6 +94,8 @@ filetype plugin indent on    " required
 
 " NERDTree setting
 noremap <Leader>n :NERDTreeToggle<cr>
+noremap <Leader>2 :tabp<cr>
+noremap <Leader>3 :tabn<cr>
 
 " PowerLine setting
   "let g:Powerline_symbols = 'fancy'
