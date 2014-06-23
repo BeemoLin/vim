@@ -84,6 +84,9 @@ filetype plugin indent on    " required
   set expandtab
 	set smarttab
   set cindent
+  "mac backspace can't working
+  set nocompatible
+  set backspace=indent,eol,start
   "關閉提示音
   set vb t_vb=
   "縮排
