@@ -51,7 +51,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+filetype plugin indent on    "自動縮排
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -80,10 +80,10 @@ filetype plugin indent on    " required
   "tab for ruby
   set tabstop=2
   set softtabstop=2
-  set shiftwidth=2
-  set expandtab
+  set shiftwidth=0 "自動縮排
+  "set expandtab
 	set smarttab
-  set cindent
+  "set cindent
   "mac backspace can't working
   set nocompatible
   set backspace=indent,eol,start
