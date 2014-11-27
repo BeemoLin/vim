@@ -29,13 +29,9 @@ Plugin 'user/L9', {'name': 'newL9'}
 " 檔案樹
 Plugin 'scrooloose/nerdtree'
 " 靜態語法檢查
+Plugin 'tpope/vim-pathogen'
 Plugin 'scrooloose/syntastic'
-"ruby
-Plugin 'tpope/vim-rbenv'
-"rails.vim
-Plugin 'tpope/vim-rails'
-"Powerline
-"Plugin 'Lokaltog/vim-powerline'
+
 Plugin 'bling/vim-airline'
 "ColorsSchemes
 Plugin 'flazz/vim-colorschemes'
@@ -43,12 +39,11 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'kien/ctrlp.vim'
 "matchit % 支援HTML Tag
 Plugin 'tmhedberg/matchit'
-" 自動結尾
-Plugin 'Raimondi/delimitMate'
 " 自動補全
-Plugin 'SirVer/ultisnips'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
-Plugin 'Valloric/YouCompleteMe'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    "自動縮排
@@ -80,8 +75,13 @@ filetype plugin indent on    "自動縮排
   "tab for ruby
   set tabstop=2
   set softtabstop=2
-  set shiftwidth=0 "自動縮排
-  "set expandtab
+  "set shiftwidth=0 "自動縮排
+	autocmd Filetype html setlocal ts=2 sts=2 sw=2
+	autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+	autocmd Filetype php setlocal ts=4 sts=4 sw=4
+	autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
+
+ 	"set expandtab
 	set smarttab
   "set cindent
   "mac backspace can't working
@@ -94,6 +94,8 @@ filetype plugin indent on    "自動縮排
   filetype on
   filetype plugin on
   filetype indent on
+
+	"語法檢查
 
 " NERDTree setting
 noremap <Leader>n :NERDTreeToggle<cr>
@@ -110,25 +112,26 @@ set laststatus=2
 let g:airline_detect_whitespace = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'molokai'
-let g:airline#extensions#tabline#left_sep = ''
-let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline#extensions#tabline#left_sep = '⮀'
+let g:airline#extensions#tabline#left_alt_sep = '⮁'
 " old vim-powerline symbols
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline_symbols.branch = '⭠'
+let g:airline_symbols.readonly = '⭤'
+let g:airline_symbols.linenr = '⭡'
 
 " ColorScheme
 colorscheme molokai
 
 " Systastic
+execute pathogen#infect()
 let g:syntastic_check_on_open = 1
 
 " ultisnips
