@@ -14,13 +14,22 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-pathogen'
 Plugin 'scrooloose/syntastic'
 
+" 查看 git branch 差異標記
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+
+" airline
 Plugin 'bling/vim-airline'
+
 "ColorsSchemes
 Plugin 'flazz/vim-colorschemes'
+
 "ctrl+P搜尋文件
 Plugin 'kien/ctrlp.vim'
+
 "matchit % 支援HTML Tag
 Plugin 'tmhedberg/matchit'
+
 " 自動補全
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
