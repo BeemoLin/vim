@@ -9,3 +9,7 @@ vim
 The airline font is here to download
 
 https://github.com/Lokaltog/powerline-fonts 
+
+powerline font for windows putty
+
+https://github.com/BeemoLin/consolas-powerline-vim
