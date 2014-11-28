@@ -6,4 +6,6 @@ vim
 
 `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
-The airline font is here https://github.com/ashwin/vim-powerline
+The airline font is here to download
+
+https://github.com/Lokaltog/powerline-fonts 
