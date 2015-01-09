@@ -13,3 +13,11 @@ https://github.com/Lokaltog/powerline-fonts
 powerline font for windows putty
 
 https://github.com/BeemoLin/consolas-powerline-vim
+
+In the vim
+
+`:PluginInstall`
+
+restart vim
+
+done!
