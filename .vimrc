@@ -66,23 +66,24 @@ filetype plugin indent on    "自動縮排
   "預設背景顏色
   set background=dark
   "tab for ruby
-  set tabstop=2
-  set softtabstop=2
+  set tabstop=4
+  set softtabstop=4
   "set shiftwidth=0 "自動縮排
 	autocmd Filetype html setlocal ts=2 sts=2 sw=2
 	autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 	autocmd Filetype php setlocal ts=4 sts=4 sw=4
 	autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
-
+	autocmd Filetype python setlocal ts=4 sts=4 sw=4
  	"set expandtab
-	set smarttab
+	"set smarttab
   "set cindent
   "mac backspace can't working
   set nocompatible
   set backspace=indent,eol,start
   "關閉提示音
   set vb t_vb=
-  "縮排
+
+	"縮排
   "http://stackoverflow.com/questions/10213744/vim-html-autoindent-not-working
   filetype on
   filetype plugin on
@@ -101,20 +102,6 @@ let g:airline_detect_whitespace = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'molokai'
 let g:airline_powerline_fonts = 1
-"let g:airline#extensions#tabline#left_sep = '⮀'
-"let g:airline#extensions#tabline#left_alt_sep = '⮁'
-" old vim-powerline symbols
-"if !exists('g:airline_symbols')
-"  let g:airline_symbols = {}
-"endif
-
-"let g:airline_left_sep = '⮀'
-"let g:airline_left_alt_sep = '⮁'
-"let g:airline_right_sep = '⮂'
-"let g:airline_right_alt_sep = '⮃'
-"let g:airline_symbols.branch = '⭠'
-"let g:airline_symbols.readonly = '⭤'
-"let g:airline_symbols.linenr = '⭡'
 
 " ColorScheme
 colorscheme molokai
