@@ -43,10 +43,10 @@ done!
 	u	還原指令
 	[Ctrl]-R	重做指令
 	.	重覆上一個指令
- 		! 命令	執行 linux 指令，並顯示執行結果
+	! 命令	執行 linux 指令，並顯示執行結果
 
-    # 插件指令
- 		shift + w NERDTree
+# 插件指令
+	shift + w NERDTree
 	shift + e undoTree
 	shift + left 切換左邊分頁
 	shift + right 切換右邊分頁
