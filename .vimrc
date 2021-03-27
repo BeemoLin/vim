@@ -40,6 +40,8 @@ set fileencodings=utf-8,utf-16,big5,gb2312,gbk,gb18030,euc-jp,euc-kr,latin1 "讀
 set encoding=utf-8 " 寫檔
 set cursorcolumn "游標顯示-直向
 set cursorline " 游標顯示-橫向
+nnoremap <S-Tab> << " shift + Tab for command mode
+inoremap <S-Tab> <C-d> " shift + Tab for insert mode
 
 " --- status bar ---
 "set laststatus=2 "狀態列
