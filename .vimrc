@@ -30,6 +30,7 @@ set backspace=indent,eol,start  " more powerful backspacing
 set t_Co=256 " color
 set tabstop=4 softtabstop=4 shiftwidth=4 "把縮排跟 Tab 鍵預設的 8 格空白大小改成 4 格
 set number "設定顯示行數
+set relativenumber "相對行數
 set ruler "設定右下角顯示游標所在行數及字元數
 set background=dark "深色模式
 colorscheme molokai "配色主題
