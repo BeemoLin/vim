@@ -65,6 +65,7 @@ set undofile " 持久化 undo歷史 Maintain undo history between sessions
 set undodir=~/.vim/undodir " undo 儲存位置
 
 " --- git ---
+map <S-l> :Git diff<CR>
 let g:airline_theme='google_dark'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#branch#enabled = 1
