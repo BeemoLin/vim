@@ -5,7 +5,11 @@ vim
 
 `cp vim/.vimrc ~/.vimrc`
 
-`wget https://github.com/tomasr/molokai/blob/master/colors/molokai.vim -P ~/.vim/colors`
+`git clone https://github.com/tomasr/molokai.git`
+
+`cp ./molokai/colors/molokai.vim ~/.vim/colors/`
+
+`rm -rf ./molokai`
 
 `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
