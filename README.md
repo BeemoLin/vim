@@ -5,11 +5,15 @@ vim
 
 `cp vim/.vimrc ~/.vimrc`
 
+### code color schema
+
 `git clone https://github.com/tomasr/molokai.git`
 
 `cp ./molokai/colors/molokai.vim ~/.vim/colors/`
 
 `rm -rf ./molokai`
+
+### vundle plugin manager
 
 `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
